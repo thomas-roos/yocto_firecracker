@@ -1,7 +1,7 @@
 [submodule "poky"]
 	path = poky
-	url = https://git.yoctoproject.org/poky
-	branch = kirkstone
+	url = https://github.com/thomas-roos/poky.git
+	branch = allow_qemuboot-x86_overwrite
 [submodule "meta-openembedded"]
 	path = meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded.git
