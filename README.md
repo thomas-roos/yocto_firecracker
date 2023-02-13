@@ -18,6 +18,15 @@ source poky/oe-init-build-env build
 bitbake core-image-minimal
 ```
 
+# check kvm permissions
+https://wiki.yoctoproject.org/wiki/Running_an_x86_Yocto_Linux_image_under_QEMU_KVM
+```
+sudo addgroup --system vhost-net
+sudo adduser $USER vhost-net
+sudo chown root:vhost-net /dev/vhost-net
+sudo chmod 0660 /dev/vhost-net
+```
+
 # run qemu
 ```
 runqemu nographic kvm-vhost
