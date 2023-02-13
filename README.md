@@ -1,5 +1,7 @@
 # this shows how to build and then run firecracker in qemu
 
+# video
+https://asciinema.org/a/BKKYblaFXq80QdtC3l0tL2BkZ
 
 IMPORTANT build machine needs nested kvm support to enable kvm IN qemu!!!
 If you're using EC2 you need a metal instance type as decribed here:
