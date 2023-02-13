@@ -32,7 +32,7 @@ sudo chmod 0660 /dev/vhost-net
 runqemu nographic kvm-vhost
 ```
 
-# check inside of qemu is a /dev/kvm exists
+# check inside of qemu that a /dev/kvm exists with correct permissions
 ```
 root@qemux86-64:~# ls -la /dev/kvm
 crw-rw-rw-    1 root     kvm        10, 232 Feb  2 11:10 /dev/kvm
